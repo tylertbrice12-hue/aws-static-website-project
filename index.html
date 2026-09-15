@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Tyler Brice — Cloud Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Tyler Brice — AWS Certified Cloud Practitioner. Hands-on cloud infrastructure, monitoring, and troubleshooting projects.">
+<meta name="description" content="Tyler Brice — AWS Certified Cloud Practitioner. Hands-on cloud infrastructure, Terraform, serverless, and monitoring projects.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -247,8 +247,8 @@
 
     <div class="metrics-row">
       <div class="metric"><div class="num">1 / 1</div><div class="lbl">Certs earned / in progress</div></div>
-      <div class="metric"><div class="num">2</div><div class="lbl">Projects deployed</div></div>
-      <div class="metric"><div class="num">12</div><div class="lbl">AWS services, hands-on</div></div>
+      <div class="metric"><div class="num">3</div><div class="lbl">Projects deployed</div></div>
+      <div class="metric"><div class="num">13</div><div class="lbl">AWS services, hands-on</div></div>
       <div class="metric"><div class="num">HC → Cloud</div><div class="lbl">Career track</div></div>
     </div>
 
@@ -275,21 +275,22 @@
   <div class="wrap">
     <div class="section-head"><span class="tag">01</span><h2>About</h2></div>
     <p class="lede">
-      I'm an AWS Certified Cloud Practitioner with hands-on experience across EC2, S3, CloudFront, CloudWatch,
-      IAM, SNS, VPC, RDS, DynamoDB, and EFS, built through self-directed projects and structured labs rather than
-      coursework alone. On my monitoring project, I configured a CloudWatch alarm to trigger at 50% CPU
-      utilization during a simulated workload spike, and confirmed the SNS notification landed in about
-      3 minutes. That's the kind of monitoring-to-alert pipeline I want to keep building.
+      AWS Certified Cloud Practitioner with hands-on experience across EC2, S3, CloudFront, IAM, CloudWatch,
+      SNS, VPC, Lambda, and DynamoDB, built through self-directed projects and practical lab work. My most
+      recent project was a serverless file processing pipeline provisioned entirely with Terraform and
+      connected through Lambda and DynamoDB. I focused on more than just getting it to work; I verified
+      execution end-to-end through CloudWatch Logs and the resulting DynamoDB record, and configured
+      CloudWatch and SNS to alert me if the function ever failed, before making the project public.
     </p>
     <p class="lede" style="margin-top:14px;">
-      Before cloud, I spent several years in healthcare operations, diagnosing and escalating technical
-      system failures under pressure. I troubleshot EHR connectivity issues, triaged problems by severity,
-      and documented fixes for teams who depended on the systems staying up. Moving into cloud operations
-      felt less like starting over and more like applying the same instinct to different infrastructure.
+      Before making the transition into cloud operations, I worked in healthcare operations supporting
+      systems that directly affected patient care. I troubleshot EHR connectivity issues, triaged problems
+      based on severity, documented technical issues, and worked with support teams to keep critical systems
+      operational.
     </p>
     <p class="lede" style="margin-top:14px;">
-      I'm currently studying for the AWS Solutions Architect – Associate certification and building toward
-      Cloud Support, Cloud Operations, DevOps Support, and Site Reliability roles.
+      I'm currently studying for the AWS Solutions Architect – Associate certification and pursuing junior
+      cloud and DevOps roles where I can continue building on my hands-on AWS and troubleshooting experience.
     </p>
   </div>
 </section>
@@ -318,6 +319,21 @@
     </div>
 
     <div class="skill-group">
+      <div class="skill-group-title"><span class="dot"></span>Infrastructure as Code &amp; DevOps</div>
+      <div class="chip-row">
+        <span class="chip">Terraform</span><span class="chip">Git</span><span class="chip">GitHub</span>
+        <span class="chip">CloudFormation</span><span class="chip">CI/CD Fundamentals</span><span class="chip">PowerShell</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-title"><span class="dot"></span>Programming &amp; Scripting</div>
+      <div class="chip-row">
+        <span class="chip">Python (AWS Lambda, boto3)</span><span class="chip">PowerShell Scripting</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
       <div class="skill-group-title"><span class="dot"></span>Monitoring &amp; Observability</div>
       <div class="chip-row">
         <span class="chip">CloudWatch Metrics</span><span class="chip">CloudWatch Alarms</span>
@@ -331,15 +347,13 @@
       <div class="chip-row">
         <span class="chip">EC2</span><span class="chip">EC2 Auto Scaling</span><span class="chip">EBS</span>
         <span class="chip">S3</span><span class="chip">CloudFront</span><span class="chip">EFS</span>
-        <span class="chip">DynamoDB</span><span class="chip">RDS (Multi-AZ)</span>
+        <span class="chip">Lambda</span><span class="chip">DynamoDB</span><span class="chip">RDS (Multi-AZ)</span>
       </div>
     </div>
 
     <div class="skill-group">
-      <div class="skill-group-title"><span class="dot"></span>DevOps, Documentation &amp; Tools</div>
+      <div class="skill-group-title"><span class="dot"></span>Documentation &amp; Tools</div>
       <div class="chip-row">
-        <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">CloudFormation</span>
-        <span class="chip">Infrastructure as Code</span><span class="chip">CI/CD Fundamentals</span>
         <span class="chip">Technical Documentation</span><span class="chip">Ticket Management</span>
         <span class="chip">VS Code</span>
       </div>
@@ -348,9 +362,7 @@
     <div class="skill-group">
       <div class="skill-group-title"><span class="dot" style="background:var(--warn);"></span>Currently Learning</div>
       <div class="chip-row learning">
-        <span class="chip">Python</span><span class="chip">Bash Scripting</span>
-        <span class="chip">Docker &amp; Kubernetes (conceptual)</span><span class="chip">Terraform</span>
-        <span class="chip">Lambda</span>
+        <span class="chip">Bash Scripting</span><span class="chip">Docker &amp; Kubernetes (conceptual)</span>
       </div>
     </div>
   </div>
@@ -359,6 +371,27 @@
 <section id="projects">
   <div class="wrap">
     <div class="section-head"><span class="tag">03</span><h2>Projects</h2></div>
+
+    <div class="project-card">
+      <div class="project-top">
+        <h3>Serverless File Processing Pipeline (Terraform)</h3>
+        <span class="badge">PIPELINE VALIDATED</span>
+      </div>
+      <div class="stack-line">Terraform · Lambda (Python) · S3 · DynamoDB · CloudWatch · SNS · IAM</div>
+      <p>
+        Provisioned a fully serverless file processing pipeline, S3 to Lambda to DynamoDB, entirely as
+        Infrastructure as Code using Terraform instead of the console. Wrote a Python Lambda function with
+        boto3 to process S3 upload events, extract file metadata, and write structured records to DynamoDB.
+        Configured a CloudWatch alarm on Lambda errors with SNS email alerting, and validated the entire
+        pipeline end to end with a real test upload before considering it complete. Along the way, diagnosed
+        and resolved an AWS credentials and IAM permissions issue, plus a Git history problem caused by an
+        oversized provider binary, correcting version control hygiene before pushing to a public repository.
+        Tore down all resources with Terraform after validation to avoid ongoing cost.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/tylertbrice12-hue/serverless-pipeline-project" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </div>
 
     <div class="project-card">
       <div class="project-top">
@@ -371,7 +404,9 @@
         least-privilege access policies to keep resources secure. Hit a deployment issue where the site
         wouldn't render. I traced it to an incorrect file extension on the index file, caused by how it saved
         when uploading from GitHub. Fixed the naming and redeployed, landing on a fully Enabled distribution
-        with HTTPS delivery. Documented the process so the steps are repeatable.
+        with HTTPS delivery. Later resolved a CloudFront caching issue after a post-deployment update, using a
+        cache invalidation to restore the live site without downtime. Documented the process so the steps are
+        repeatable.
       </p>
       <div class="project-links">
         <a href="https://d128r20xpbuxt8.cloudfront.net/" target="_blank" rel="noopener">Live Demo →</a>
@@ -412,7 +447,7 @@
         <li>Diagnose data connectivity issues between diagnostic equipment (EKG, Audiometer) and PAS, including wiring misconfigurations and failed result transfers.</li>
         <li>Maintain continuity during system outages through manual workflows and detailed technical tickets.</li>
         <li>Run daily equipment configuration, calibration, and checklist-based functional checks.</li>
-        <li>Assisted physicians and nurses during high-stress emergency and code situations by connecting patients to ECG and cardiac monitor leads to track heart rhythms, assisting with portable defibrillator setup, and promptly following clinical instructions.</li>
+        <li>Serve as a patient's first point of contact, gathering intake information and documenting clinical notes for the provider, and escalating urgent symptoms such as elevated blood pressure or shortness of breath for immediate evaluation.</li>
       </ul>
     </div>
 
@@ -421,7 +456,7 @@
       <h3>Brand Development Manager | Medical Assistant | Receptionist</h3>
       <div class="company">AFC Urgent Care</div>
       <ul>
-        <li>Resolved recurring Experity system issues, including scanner malfunctions and insurance verification errors.</li>
+        <li>Resolved recurring technical issues with Experity, the practice management system, including document/ID scanner malfunctions and insurance verification errors.</li>
         <li>Ran the lab: daily quality control on equipment, troubleshooting issues before formal work orders.</li>
         <li>Served as a patient's first point of contact, gathering intake information and documenting clinical notes for the provider, and escalating urgent symptoms such as elevated blood pressure or shortness of breath.</li>
         <li>Led I-693 immigration documentation, ensuring precise recording of sensitive information prior to sealing.</li>
@@ -482,9 +517,8 @@
 
     <div class="section-head" style="margin-top:34px;"><span class="tag">06</span><h2>Target Roles</h2></div>
     <div class="pill-row">
-      <span class="pill">Cloud Support</span>
+      <span class="pill">Junior Cloud &amp; DevOps</span>
       <span class="pill">Cloud Operations</span>
-      <span class="pill">DevOps Support</span>
       <span class="pill">Site Reliability</span>
     </div>
   </div>
@@ -504,4 +538,3 @@
 
 </body>
 </html>
-
